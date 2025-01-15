@@ -57,11 +57,12 @@ header nav a:hover {
 /* Seção "Sobre Nós" */
 .sobre-nos {
     max-width: 800px;
-    margin: 120px auto 50px; /* Distância ajustada para evitar sobreposição */
+    margin: 150px auto 50px; /* Ajuste da margem superior para evitar sobreposição da barra fixa */
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    scroll-margin-top: 80px; /* Para ajustar o scroll e evitar o corte da seção */
 }
 
 .sobre-nos h2 {
@@ -101,7 +102,7 @@ header nav a:hover {
 }
 
 .service-category {
-    flex: 1 1 calc(50% - 30px); /* Flexível, ajusta 50% menos o gap */
+    flex: 1 1 calc(50% - 30px); /* Ajusta as colunas para 50% menos o gap */
     padding: 20px;
     background-color: #f9f9f9;
     border-radius: 8px;
@@ -177,7 +178,7 @@ footer p {
     /* Ajuste da seção "Sobre Nós" */
     .sobre-nos {
         max-width: 90%;
-        margin: 150px auto 30px; /* Distância ajustada para compensar o tamanho da barra */
+        margin: 160px auto 30px; /* Distância ajustada para compensar o tamanho da barra */
         padding: 15px;
     }
 
