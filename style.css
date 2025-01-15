@@ -56,7 +56,6 @@ header nav a:hover {
     color: #f1c40f; /* Cor de destaque ao passar o mouse */
 }
 
-
 /* Seção "Sobre Nós" */
 .sobre-nos {
     max-width: 800px;
@@ -139,4 +138,109 @@ footer {
 
 footer p {
     font-size: 16px;
+}
+
+/* ----- Media Queries (Responsividade) ----- */
+
+/* Para telas pequenas (smartphones) */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column; /* Alinha logo e título em coluna */
+        padding: 15px 20px;
+        text-align: center;
+    }
+
+    header .logo {
+        margin-bottom: 10px; /* Espaço entre logo e título */
+    }
+
+    header .logo img {
+        width: 30px; /* Logo um pouco menor */
+        margin-right: 10px;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    header nav a {
+        margin-left: 10px;
+        font-size: 16px;
+    }
+
+    /* Ajuste da seção "Sobre Nós" */
+    .sobre-nos {
+        max-width: 95%;
+        margin: 100px auto 30px;
+        padding: 15px;
+    }
+
+    .sobre-nos h2 {
+        font-size: 24px;
+    }
+
+    .sobre-nos p {
+        font-size: 16px;
+    }
+
+    /* Ajuste da seção "Serviços" */
+    .servicos {
+        max-width: 100%;
+        margin: 30px auto;
+        padding: 20px;
+    }
+
+    .servicos h2 {
+        font-size: 28px;
+    }
+
+    .service-container {
+        flex-direction: column; /* Alinha as colunas de serviços em uma coluna */
+        gap: 20px;
+    }
+
+    .service-category {
+        flex: 1;
+        padding: 15px;
+    }
+
+    .service-category h3 {
+        font-size: 20px;
+    }
+
+    .service-category ul li {
+        font-size: 16px;
+    }
+}
+
+/* Para telas muito pequenas (telas de celulares antigos) */
+@media (max-width: 480px) {
+    header nav {
+        display: none; /* Esconde os links de navegação em telas pequenas */
+    }
+
+    .sobre-nos h2 {
+        font-size: 20px;
+    }
+
+    .sobre-nos p {
+        font-size: 14px;
+    }
+
+    .servicos h2 {
+        font-size: 24px;
+    }
+
+    .service-category h3 {
+        font-size: 18px;
+    }
+
+    .service-category ul li {
+        font-size: 14px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
 }
