@@ -10,7 +10,6 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #f9f9f9; /* Fundo suave */
     color: #333;
-    padding-top: 80px; /* Distância para a barra fixa */
 }
 
 /* Barra de navegação */
@@ -25,6 +24,7 @@ header {
     top: 0;
     width: 100%;
     z-index: 1000;
+    transition: padding 0.3s ease;
 }
 
 header .logo {
@@ -56,7 +56,7 @@ header nav a:hover {
 /* Seção "Sobre Nós" */
 .sobre-nos {
     max-width: 800px;
-    margin: 120px auto 50px; /* Ajustando o margin para acomodar a navbar */
+    margin: 120px auto 50px; /* Distância ajustada para evitar sobreposição */
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
@@ -143,10 +143,9 @@ footer p {
 
 /* Para telas pequenas (smartphones) */
 @media (max-width: 768px) {
-
     header {
         flex-direction: column; /* Alinha logo e título em coluna */
-        padding: 15px 20px;
+        padding: 10px 20px;
         text-align: center;
     }
 
@@ -177,7 +176,7 @@ footer p {
     /* Ajuste da seção "Sobre Nós" */
     .sobre-nos {
         max-width: 90%;
-        margin: 100px auto 30px;
+        margin: 150px auto 30px; /* Distância ajustada para compensar o tamanho da barra */
         padding: 15px;
     }
 
