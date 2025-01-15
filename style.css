@@ -1,37 +1,44 @@
+/* Resetando alguns estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para o corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9; /* Fundo suave */
+    color: #333;
+    padding-top: 80px; /* Distância para a barra fixa */
+}
+
 /* Barra de navegação */
 header {
-    display: flex; /* Flexbox para alinhar os itens */
-    justify-content: space-between; /* Espaçamento entre logo+título e o menu */
-    align-items: center; /* Alinhamento vertical central */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #343a40; /* Barra de navegação escura */
     color: #fff;
-    padding: 10px 20px;
+    padding: 15px 20px;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
 }
 
-/* Container que envolve a logo e o título */
 header .logo {
-    display: flex; /* Flexbox para alinhar a logo e o título na mesma linha */
-    align-items: center; /* Alinhamento vertical central */
+    display: flex;
+    align-items: center;
 }
 
 header .logo img {
-    width: 40px; /* Ajuste do tamanho da logo */
-    margin-right: 15px; /* Espaço entre a logo e o título */
+    width: 40px;
+    margin-right: 15px;
 }
 
 header h1 {
     font-size: 24px;
-    margin: 0; /* Remover margem ao redor do título */
-}
-
-/* Navegação */
-header nav {
-    display: flex;
-    justify-content: flex-end; /* Alinha os itens à direita */
 }
 
 header nav a {
@@ -44,6 +51,92 @@ header nav a {
 
 header nav a:hover {
     color: #f1c40f; /* Cor de destaque ao passar o mouse */
+}
+
+/* Seção "Sobre Nós" */
+.sobre-nos {
+    max-width: 800px;
+    margin: 120px auto 50px; /* Ajustando o margin para acomodar a navbar */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.sobre-nos h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #343a40;
+}
+
+.sobre-nos p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Seção "Serviços" */
+.servicos {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.servicos h2 {
+    font-size: 32px;
+    text-align: center;
+    color: #343a40;
+    margin-bottom: 30px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap; /* Permite que as colunas se ajustem em telas pequenas */
+}
+
+.service-category {
+    flex: 1 1 calc(50% - 30px); /* Flexível, ajusta 50% menos o gap */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Espaço entre as colunas em telas pequenas */
+}
+
+.service-category h3 {
+    font-size: 24px;
+    color: #34495e;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.service-category ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.service-category ul li {
+    font-size: 18px;
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #343a40;
+    color: #fff;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 16px;
 }
 
 /* ----- Media Queries (Responsividade) ----- */
@@ -62,7 +155,7 @@ header nav a:hover {
     }
 
     header .logo img {
-        width: 30px; /* Logo um pouco menor */
+        width: 30px;
         margin-right: 10px;
     }
 
@@ -83,7 +176,7 @@ header nav a:hover {
 
     /* Ajuste da seção "Sobre Nós" */
     .sobre-nos {
-        max-width: 95%;
+        max-width: 90%;
         margin: 100px auto 30px;
         padding: 15px;
     }
@@ -108,7 +201,7 @@ header nav a:hover {
     }
 
     .service-container {
-        flex-direction: column; /* Alinha as colunas de serviços em uma coluna */
+        flex-direction: column; /* Coloca as colunas uma embaixo da outra */
         gap: 20px;
     }
 
@@ -126,17 +219,17 @@ header nav a:hover {
     }
 }
 
-/* Para telas muito pequenas (telas de celulares antigos) */
+/* Para telas muito pequenas (celulares antigos) */
 @media (max-width: 480px) {
     header nav {
-        display: flex; /* Mantém a navegação visível */
-        flex-direction: column; /* Coloca os links de navegação um embaixo do outro */
-        align-items: center; /* Centraliza os links */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         margin-top: 15px;
     }
 
     header nav a {
-        margin: 10px 0; /* Adiciona espaço entre os links */
+        margin: 10px 0;
         font-size: 16px;
     }
 
