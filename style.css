@@ -10,6 +10,7 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #f9f9f9; /* Fundo suave */
     color: #333;
+    padding-top: 80px; /* Espaço ajustado para compensar a barra fixa */
 }
 
 /* Barra de navegação */
