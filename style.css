@@ -1,0 +1,142 @@
+/* Resetando alguns estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para o corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9; /* Fundo suave */
+    color: #333;
+    padding-top: 80px;
+}
+
+/* Barra de navegação */
+header {
+    display: flex; /* Flexbox para alinhar os itens */
+    justify-content: space-between; /* Espaçamento entre logo+título e o menu */
+    align-items: center; /* Alinhamento vertical central */
+    background-color: #343a40; /* Barra de navegação escura */
+    color: #fff;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Container que envolve a logo e o título */
+header .logo {
+    display: flex; /* Flexbox para alinhar a logo e o título na mesma linha */
+    align-items: center; /* Alinhamento vertical central */
+}
+
+header .logo img {
+    width: 40px; /* Ajuste do tamanho da logo */
+    margin-right: 15px; /* Espaço entre a logo e o título */
+}
+
+header h1 {
+    font-size: 24px;
+    margin: 0; /* Remover margem ao redor do título */
+}
+
+/* Navegação */
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #f1c40f; /* Cor de destaque ao passar o mouse */
+}
+
+
+/* Seção "Sobre Nós" */
+.sobre-nos {
+    max-width: 800px;
+    margin: 120px auto 50px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.sobre-nos h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #343a40;
+}
+
+.sobre-nos p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Seção "Serviços" */
+.servicos {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.servicos h2 {
+    font-size: 32px;
+    text-align: center;
+    color: #343a40;
+    margin-bottom: 30px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.service-category {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-category h3 {
+    font-size: 24px;
+    color: #34495e;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.service-category ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.service-category ul li {
+    font-size: 18px;
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #343a40;
+    color: #fff;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 16px;
+}
